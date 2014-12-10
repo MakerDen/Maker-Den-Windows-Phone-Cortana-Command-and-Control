@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.1">
+
+  <CommandSet xml:lang="en-gb" Name="LightSwitchEnglish">
+    <CommandPrefix>turn</CommandPrefix>
+
+    <Example>how can I turn the light on</Example>
+
+    <Command Name="turnLightOn">
+      <Example>light ON</Example>
+      <ListenFor>lights on</ListenFor>
+      <ListenFor>on lights</ListenFor>
+      <ListenFor>me on</ListenFor>
+      <ListenFor>on</ListenFor>
+      <Feedback>Turning light on</Feedback>
+      <Navigate Target="MainPage.xaml"/>
+    </Command>
+
+    <Command Name="turnLightOff">
+      <Example>light OFF</Example>
+      <ListenFor>light off</ListenFor>
+      <ListenFor>off lights</ListenFor>
+      <ListenFor>me off</ListenFor>
+      <ListenFor>off</ListenFor>
+      <Feedback>Turning light off</Feedback>
+      <Navigate Target="MainPage.xaml"/>
+    </Command>
+
+  </CommandSet>
+
+  <!-- Other CommandSets for other languages -->
+
+</VoiceCommands>
